@@ -175,7 +175,7 @@ async function getData(type, param = null) {
         displayMeals(data.meals);
     }
 
-    const HOME = document.querySelector(".home");
+    
     HOME.classList.remove("hidden");
     load.classList.add("hidden");
     load.classList.remove("flex");
@@ -184,16 +184,19 @@ async function getData(type, param = null) {
 
 document.querySelector(".Categories").addEventListener("click", () => {
     getData("category");
+    Search.classList.add("hidden");
  
 });
 
 document.querySelector(".Area").addEventListener("click", () => {
     getData("area");
+    Search.classList.add("hidden");
   
 });
 
 document.querySelector(".Ingredients").addEventListener("click", () => {
     getData("ingredient");
+    Search.classList.add("hidden");
    
    
 });
